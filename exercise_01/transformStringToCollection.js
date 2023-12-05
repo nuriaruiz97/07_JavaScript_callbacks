@@ -12,3 +12,15 @@
  * output
  *  - array
  */
+
+const transformStringToArray = function (value, onError, onSuccess) {
+  if (typeof value !== "string" || value === "") {
+    return onError();
+  }
+
+  if (typeof value === "string") {
+    return onSuccess(value);
+  }
+};
+
+export default transformStringToArray;
