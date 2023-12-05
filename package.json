@@ -1,0 +1,19 @@
+{
+  "name": "05_javascript_functions",
+  "version": "1.0.0",
+  "description": "JS functions",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:fix": "npx prettier . --write",
+    "lint": "npx prettier . --check"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "prettier": "^3.1.0"
+  }
+}
