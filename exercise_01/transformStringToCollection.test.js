@@ -10,10 +10,36 @@ describe("Given a transformStringToArray function", () => {
       expect(valueNumber).toEqual([]);
     });
   });
+
+  //test with value as array and log result
+  describe("When it receives an array", () => {
+    test("Then it should return an error", () => {
+      const valueArray = transformStringToArray([], onError, onSuccess);
+      expect(valueArray).toEqual([]);
+    });
+  });
+
+  //test with value as boolean and log result
+  describe("When it receives a boolean", () => {
+    test("Then it should return an error", () => {
+      const valueBoolean = transformStringToArray(true, onError, onSuccess);
+      expect(valueBoolean).toEqual([]);
+    });
+  });
+
+  //test with value as empty string and log result
+  describe("When it receives an empty string", () => {
+    test("Then it should return an error", () => {
+      const valueEmptyString = transformStringToArray("", onError, onSuccess);
+      expect(valueEmptyString).toEqual([]);
+    });
+  });
+
+  //test with value as string and log result
+  describe("When it receives a string", () => {
+    test("Then it should return an array with the string", () => {
+      const valueString = transformStringToArray("Núria", onError, onSuccess);
+      expect(valueString).toEqual(["Núria"]);
+    });
+  });
 });
-
-//test with value as array and log result
-
-//test with value as boolean and log result
-//test with value as empty string and log result
-//test with value as string and log result
