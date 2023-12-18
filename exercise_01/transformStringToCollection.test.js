@@ -17,7 +17,7 @@ describe("Given a transformStringToArray function", () => {
       const valueNumber = transformStringToArray(
         number,
         mockOnError,
-        mockOnSuccess
+        mockOnSuccess,
       );
 
       expect(valueNumber).toEqual([]);
@@ -43,7 +43,7 @@ describe("Given a transformStringToArray function", () => {
       const valueBoolean = transformStringToArray(
         true,
         mockOnError,
-        mockOnSuccess
+        mockOnSuccess,
       );
 
       expect(valueBoolean).toEqual([]);
@@ -58,7 +58,7 @@ describe("Given a transformStringToArray function", () => {
       const valueEmptyString = transformStringToArray(
         "",
         mockOnError,
-        mockOnSuccess
+        mockOnSuccess,
       );
 
       expect(valueEmptyString).toEqual([]);
@@ -73,7 +73,7 @@ describe("Given a transformStringToArray function", () => {
       const valueString = transformStringToArray(
         "Núria",
         mockOnError,
-        mockOnSuccess
+        mockOnSuccess,
       );
 
       expect(valueString).toEqual(["Núria"]);
