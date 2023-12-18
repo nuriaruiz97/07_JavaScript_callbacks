@@ -6,8 +6,10 @@ describe("Given a transformStringToArray function", () => {
     jest.clearAllMocks();
   });
 
-  const mockOnError = jest.fn();
-  const mockOnSuccess = jest.fn();
+  const mockOnError = jest.fn().mockImplementation(() => []);
+  // const mockOnSuccess = jest.fn().mockImplementation((value) => value.split(" "));
+
+  const mockOnSuccess = jest.fn((value) => value.split(" "));
 
   describe("When it receives a number", () => {
     test("Then it should return an error", () => {
