@@ -1,0 +1,30 @@
+{
+  "name": "05_javascript_functions",
+  "version": "1.0.0",
+  "description": "JS functions",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint:fix": "prettier . --write",
+    "lint": "prettier . --check"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "babel": {
+    "env": {
+      "test": {
+        "plugins": [
+          "@babel/plugin-transform-modules-commonjs"
+        ]
+      }
+    }
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.23.3",
+    "jest": "^29.7.0",
+    "prettier": "^3.1.0"
+  }
+}
